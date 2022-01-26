@@ -71,3 +71,5 @@ jobs:
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
           -Dsonar.projectKey=qtngr1_github-action-maven-example-start \
           -Dsonar.tests=src
+          -Dsonar.test.inclusions=**/test/**
+          -Dsonar.exclusions=**/test/**

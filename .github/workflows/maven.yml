@@ -74,5 +74,4 @@ jobs:
           -Dsonar.sources=src \
           -Dsonar.tests=src \
           -Dsonar.test.inclusions=src/test/**/* \
-          -Dsonar.exclusions=src/test/**/* \
-          -Dsonar.java.binaries=build
+          -Dsonar.exclusions=src/test/**/*

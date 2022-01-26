@@ -68,6 +68,7 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         #Doesn't read sonar-project.properties so provide config here
         run: |
+          ls && pwd && \
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
           -Dsonar.projectKey=qtngr1_github-action-maven-example-start \
           -Dsonar.tests=src/test

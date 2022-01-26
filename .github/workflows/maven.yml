@@ -39,7 +39,7 @@ jobs:
           name: Package
           path: staging
   build:
-    name: Build
+    name: Build & Scan
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
